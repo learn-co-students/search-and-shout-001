@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7289E07A19CDDCE4009B4E35 /* FISSearchDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */; };
 		D8E17A791964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
 		D8E17A7B1964331900F1549F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7A1964331900F1549F /* CoreGraphics.framework */; };
 		D8E17A7D1964331900F1549F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7C1964331900F1549F /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7289E07819CDDCE4009B4E35 /* FISSearchDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchDetailTableViewController.h; sourceTree = "<group>"; };
+		7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchDetailTableViewController.m; sourceTree = "<group>"; };
 		D8E17A751964331900F1549F /* searchAndShout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchAndShout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E17A781964331900F1549F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E17A7A1964331900F1549F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +96,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7289E07B19CDDCF9009B4E35 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D8E17AAD1964333A00F1549F /* FISDataStore.h */,
+				D8E17AAE1964333A00F1549F /* FISDataStore.m */,
+				D8E17AB2196433BD00F1549F /* searchAndShout.xcdatamodeld */,
+				D8E17AB51964349300F1549F /* FISDanceMove.h */,
+				D8E17AB61964349300F1549F /* FISDanceMove.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		7289E07C19CDDD0F009B4E35 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7289E07819CDDCE4009B4E35 /* FISSearchDetailTableViewController.h */,
+				7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */,
+				D8E17ABB196439B700F1549F /* FISSearchViewController.h */,
+				D8E17ABC196439B700F1549F /* FISSearchViewController.m */,
+				D8E17AB81964368500F1549F /* FISDancesTableViewController.h */,
+				D8E17AB91964368600F1549F /* FISDancesTableViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
 		D8E17A6C1964331900F1549F = {
 			isa = PBXGroup;
 			children = (
@@ -129,16 +157,9 @@
 			children = (
 				D8E17A871964331900F1549F /* FISAppDelegate.h */,
 				D8E17A881964331900F1549F /* FISAppDelegate.m */,
-				D8E17AAD1964333A00F1549F /* FISDataStore.h */,
-				D8E17AAE1964333A00F1549F /* FISDataStore.m */,
-				D8E17AB2196433BD00F1549F /* searchAndShout.xcdatamodeld */,
-				D8E17AB51964349300F1549F /* FISDanceMove.h */,
-				D8E17AB61964349300F1549F /* FISDanceMove.m */,
+				7289E07B19CDDCF9009B4E35 /* models */,
+				7289E07C19CDDD0F009B4E35 /* view controllers */,
 				D8E17A8A1964331900F1549F /* Main.storyboard */,
-				D8E17ABB196439B700F1549F /* FISSearchViewController.h */,
-				D8E17ABC196439B700F1549F /* FISSearchViewController.m */,
-				D8E17AB81964368500F1549F /* FISDancesTableViewController.h */,
-				D8E17AB91964368600F1549F /* FISDancesTableViewController.m */,
 				D8E17A901964331900F1549F /* Images.xcassets */,
 				D8E17A7F1964331900F1549F /* Supporting Files */,
 			);
@@ -273,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E17A851964331900F1549F /* main.m in Sources */,
+				7289E07A19CDDCE4009B4E35 /* FISSearchDetailTableViewController.m in Sources */,
 				D8E17AAF1964333A00F1549F /* FISDataStore.m in Sources */,
 				D8E17ABA1964368600F1549F /* FISDancesTableViewController.m in Sources */,
 				D8E17AB71964349300F1549F /* FISDanceMove.m in Sources */,
@@ -483,6 +505,7 @@
 				D8E17AA91964331900F1549F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8E17AAA1964331900F1549F /* Build configuration list for PBXNativeTarget "searchAndShoutTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +514,7 @@
 				D8E17AAC1964331900F1549F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
