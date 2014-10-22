@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7289E07A19CDDCE4009B4E35 /* FISSearchDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */; };
+		7DD53D22E968B81358BB917B /* libPods-searchAndShoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */; };
 		D8E17A791964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
 		D8E17A7B1964331900F1549F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7A1964331900F1549F /* CoreGraphics.framework */; };
 		D8E17A7D1964331900F1549F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7C1964331900F1549F /* UIKit.framework */; };
@@ -40,8 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-searchAndShoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0DF866CE7A3AB196EF3070 /* Pods-searchAndShoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.release.xcconfig"; sourceTree = "<group>"; };
 		7289E07819CDDCE4009B4E35 /* FISSearchDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchDetailTableViewController.h; sourceTree = "<group>"; };
 		7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchDetailTableViewController.m; sourceTree = "<group>"; };
+		CF5AFF0E82641F62D1C923F8 /* Pods-searchAndShoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8E17A751964331900F1549F /* searchAndShout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchAndShout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E17A781964331900F1549F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E17A7A1964331900F1549F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,12 +94,22 @@
 				D8E17A981964331900F1549F /* XCTest.framework in Frameworks */,
 				D8E17A9A1964331900F1549F /* UIKit.framework in Frameworks */,
 				D8E17A991964331900F1549F /* Foundation.framework in Frameworks */,
+				7DD53D22E968B81358BB917B /* libPods-searchAndShoutTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC825A642418C627224CFCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF5AFF0E82641F62D1C923F8 /* Pods-searchAndShoutTests.debug.xcconfig */,
+				4B0DF866CE7A3AB196EF3070 /* Pods-searchAndShoutTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7289E07B19CDDCF9009B4E35 /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +142,7 @@
 				D8E17A9D1964331900F1549F /* searchAndShoutTests */,
 				D8E17A771964331900F1549F /* Frameworks */,
 				D8E17A761964331900F1549F /* Products */,
+				4AC825A642418C627224CFCC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +163,7 @@
 				D8E17A7A1964331900F1549F /* CoreGraphics.framework */,
 				D8E17A7C1964331900F1549F /* UIKit.framework */,
 				D8E17A971964331900F1549F /* XCTest.framework */,
+				034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8E17AAA1964331900F1549F /* Build configuration list for PBXNativeTarget "searchAndShoutTests" */;
 			buildPhases = (
+				868606444A1923C59EA6BC1A /* Check Pods Manifest.lock */,
 				D8E17A921964331900F1549F /* Sources */,
 				D8E17A931964331900F1549F /* Frameworks */,
 				D8E17A941964331900F1549F /* Resources */,
+				3959043B6C5A3B3B39D53C0B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +305,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3959043B6C5A3B3B39D53C0B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868606444A1923C59EA6BC1A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8E17A711964331900F1549F /* Sources */ = {
@@ -448,6 +499,7 @@
 		};
 		D8E17AAB1964331900F1549F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5AFF0E82641F62D1C923F8 /* Pods-searchAndShoutTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/searchAndShout.app/searchAndShout";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -470,6 +522,7 @@
 		};
 		D8E17AAC1964331900F1549F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0DF866CE7A3AB196EF3070 /* Pods-searchAndShoutTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/searchAndShout.app/searchAndShout";
 				FRAMEWORK_SEARCH_PATHS = (
