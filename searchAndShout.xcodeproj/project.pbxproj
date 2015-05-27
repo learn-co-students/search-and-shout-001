@@ -12,7 +12,6 @@
 		D8E17A791964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
 		D8E17A7B1964331900F1549F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7A1964331900F1549F /* CoreGraphics.framework */; };
 		D8E17A7D1964331900F1549F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7C1964331900F1549F /* UIKit.framework */; };
-		D8E17A831964331900F1549F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E17A811964331900F1549F /* InfoPlist.strings */; };
 		D8E17A851964331900F1549F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E17A841964331900F1549F /* main.m */; };
 		D8E17A891964331900F1549F /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E17A881964331900F1549F /* FISAppDelegate.m */; };
 		D8E17A8C1964331900F1549F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E17A8A1964331900F1549F /* Main.storyboard */; };
@@ -51,7 +50,6 @@
 		D8E17A7A1964331900F1549F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8E17A7C1964331900F1549F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8E17A801964331900F1549F /* searchAndShout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "searchAndShout-Info.plist"; sourceTree = "<group>"; };
-		D8E17A821964331900F1549F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E17A841964331900F1549F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8E17A861964331900F1549F /* searchAndShout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "searchAndShout-Prefix.pch"; sourceTree = "<group>"; };
 		D8E17A871964331900F1549F /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				D8E17A801964331900F1549F /* searchAndShout-Info.plist */,
-				D8E17A811964331900F1549F /* InfoPlist.strings */,
 				D8E17A841964331900F1549F /* main.m */,
 				D8E17A861964331900F1549F /* searchAndShout-Prefix.pch */,
 			);
@@ -291,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8E17A911964331900F1549F /* Images.xcassets in Resources */,
-				D8E17A831964331900F1549F /* InfoPlist.strings in Resources */,
 				D8E17A8C1964331900F1549F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8E17A811964331900F1549F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E17A821964331900F1549F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		D8E17A8A1964331900F1549F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
