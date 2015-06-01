@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oTz-8C-SHs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oTz-8C-SHs">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Dances Table View Controller - Dances-->
+        <!--Dances-->
         <scene sceneID="aSQ-dy-Eo7">
             <objects>
                 <tableViewController id="Xpe-Cz-8Lq" customClass="FISDancesTableViewController" sceneMemberID="viewController">
@@ -24,7 +25,7 @@
                                             <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -66,7 +67,7 @@
             </objects>
             <point key="canvasLocation" x="259" y="206"/>
         </scene>
-        <!--Search View Controller - Search-->
+        <!--Search-->
         <scene sceneID="BEz-eW-vxR">
             <objects>
                 <viewController id="CnT-7C-Tco" customClass="FISSearchViewController" sceneMemberID="viewController">
@@ -78,100 +79,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5U-KI-SCW">
-                                <rect key="frame" x="232" y="64" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mq0-eh-tAL">
+                                <rect key="frame" x="16" y="84" width="288" height="29"/>
+                                <segments>
+                                    <segment title="Name"/>
+                                    <segment title="Step 1"/>
+                                    <segment title="Step 2"/>
+                                    <segment title="Step 3"/>
+                                    <segment title="Step 4"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Here" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tbZ-Js-hcv">
+                                <rect key="frame" x="16" y="133" width="232" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUw-ej-62n">
+                                <rect key="frame" x="258" y="133" width="48" height="30"/>
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nameSearchButtonTapped:" destination="CnT-7C-Tco" eventType="touchUpInside" id="jCn-yo-Roo"/>
+                                    <action selector="search:" destination="CnT-7C-Tco" eventType="touchUpInside" id="aM3-LR-dvi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duU-JN-Jcw">
-                                <rect key="frame" x="232" y="102" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="step1SearchButtonTapped:" destination="CnT-7C-Tco" eventType="touchUpInside" id="gcr-4o-zmA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxk-d7-SO2">
-                                <rect key="frame" x="232" y="141" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="step2SearchButtonTapped:" destination="CnT-7C-Tco" eventType="touchUpInside" id="cYC-ag-Yhl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cul-vo-GnC">
-                                <rect key="frame" x="232" y="184" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="step3SearchButtonTapped:" destination="CnT-7C-Tco" eventType="touchUpInside" id="Rr2-0X-av9"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86H-79-S9r">
-                                <rect key="frame" x="232" y="227" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="step4SearchButtonTapped:" destination="CnT-7C-Tco" eventType="touchUpInside" id="s2O-bY-tZR"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search By Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8wB-Hp-ssI">
-                                <rect key="frame" x="20" y="64" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seach By Step 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tvt-kb-bTQ">
-                                <rect key="frame" x="20" y="103" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seach By Step 2" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZh-p1-Vmr">
-                                <rect key="frame" x="20" y="142" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search By Step 3" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B9j-52-rgJ">
-                                <rect key="frame" x="20" y="184" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search By Step 4" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SR6-vr-CeH">
-                                <rect key="frame" x="20" y="228" width="204" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="NQV-6l-8Yv"/>
                     <connections>
-                        <outlet property="nameSearch" destination="8wB-Hp-ssI" id="5rR-TW-vez"/>
-                        <outlet property="step1Search" destination="Tvt-kb-bTQ" id="7eB-Bs-dzU"/>
-                        <outlet property="step2Search" destination="eZh-p1-Vmr" id="lsX-vy-LGB"/>
-                        <outlet property="step3Search" destination="B9j-52-rgJ" id="PlJ-cm-72J"/>
-                        <outlet property="step4Search" destination="SR6-vr-CeH" id="t4d-Rk-OCM"/>
+                        <outlet property="searchDisplayController" destination="aW1-Df-kZW" id="yat-QU-x2s"/>
+                        <outlet property="searchHere" destination="tbZ-Js-hcv" id="3Hc-D4-y8O"/>
+                        <outlet property="segmentedControl" destination="mq0-eh-tAL" id="PnU-p6-8ac"/>
                         <segue destination="Igm-cB-jA1" kind="push" identifier="searchDetail" id="pMU-JU-sG0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCt-6q-szZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="aW1-Df-kZW">
+                    <connections>
+                        <outlet property="delegate" destination="CnT-7C-Tco" id="cnO-Zr-BC5"/>
+                        <outlet property="searchContentsController" destination="CnT-7C-Tco" id="14I-ya-AaC"/>
+                        <outlet property="searchResultsDataSource" destination="CnT-7C-Tco" id="tS0-mx-Jnd"/>
+                        <outlet property="searchResultsDelegate" destination="CnT-7C-Tco" id="dRF-fl-ymF"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="729" y="-477"/>
         </scene>
@@ -195,14 +146,14 @@
                                             <rect key="frame" x="15" y="3" width="34" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ceg-Kc-IBh">
                                             <rect key="frame" x="15" y="25" width="43" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>

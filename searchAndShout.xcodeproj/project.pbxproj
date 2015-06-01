@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B190DE81B176A2700998219 /* FISSearchViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B190DE71B176A2700998219 /* FISSearchViewControllerSpec.m */; };
 		5B2FCE091B165D99001E3F47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2FCE081B165D99001E3F47 /* Images.xcassets */; };
 		7289E07A19CDDCE4009B4E35 /* FISSearchDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */; };
 		7DD53D22E968B81358BB917B /* libPods-searchAndShoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-searchAndShoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0DF866CE7A3AB196EF3070 /* Pods-searchAndShoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B190DE71B176A2700998219 /* FISSearchViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchViewControllerSpec.m; sourceTree = "<group>"; };
 		5B2FCE081B165D99001E3F47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7289E07819CDDCE4009B4E35 /* FISSearchDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchDetailTableViewController.h; sourceTree = "<group>"; };
 		7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchDetailTableViewController.m; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		D8E17A9D1964331900F1549F /* searchAndShoutTests */ = {
 			isa = PBXGroup;
 			children = (
+				5B190DE71B176A2700998219 /* FISSearchViewControllerSpec.m */,
 				D8E17AA31964331900F1549F /* searchAndShoutTests.m */,
 				D8E17A9E1964331900F1549F /* Supporting Files */,
 			);
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B190DE81B176A2700998219 /* FISSearchViewControllerSpec.m in Sources */,
 				D8E17AA41964331900F1549F /* searchAndShoutTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
