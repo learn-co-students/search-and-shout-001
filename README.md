@@ -17,7 +17,14 @@ Three dance moves have been created for you in the `FISDataStore` class.  An `FI
 
 
 1. Present the users with a field so that they can search for the **name** of a `FISDanceMove` or the particular **step** in a `FISDanceMove`. (See the hint below)
-2. When a user selects the search button, you should search by that appropiate field.  If they were to search for what consists of **step1** of a dance, they would be presented with another view that includes the Search Result of that dance move along with the **name** of the `FISDanceMove`.  Use a `Table View Controller` to display what is being searched.  Make sure the style of the `Table View Controller` is set as **Subtitle**.  This way, the Search Result of the song will display in the ***Title*** and the **name** or **step** will display in the ***Subtitle*** of the cell.    
+2. When a user selects the search button, you should search by that appropiate field.  If they were to search for what consists of **step1** of a dance, they would be presented with another view that includes the Search Result of that dance move along with the **name** of the `FISDanceMove`.  Use a `Table View Controller` to display what is being searched.  Make sure the style of the `Table View Controller` is set as **Subtitle**.  This way, the Search Result of the song will display in the ***Title*** and the **name** or **step** will display in the ***Subtitle*** of the cell. 
+
+What the app should look like: 
+
+![alt-tag](https://curriculum-content.s3.amazonaws.com/ios/ios/CombinedImage1.jpg)
+
+![alt-tag](https://curriculum-content.s3.amazonaws.com/ios/ios/CombinedImage2.jpg)
+
 
 --- 
 
