@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2FCE091B165D99001E3F47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2FCE081B165D99001E3F47 /* Images.xcassets */; };
 		7289E07A19CDDCE4009B4E35 /* FISSearchDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */; };
 		7DD53D22E968B81358BB917B /* libPods-searchAndShoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */; };
 		D8E17A791964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
 		D8E17A7B1964331900F1549F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7A1964331900F1549F /* CoreGraphics.framework */; };
 		D8E17A7D1964331900F1549F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7C1964331900F1549F /* UIKit.framework */; };
-		D8E17A831964331900F1549F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E17A811964331900F1549F /* InfoPlist.strings */; };
 		D8E17A851964331900F1549F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E17A841964331900F1549F /* main.m */; };
 		D8E17A891964331900F1549F /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E17A881964331900F1549F /* FISAppDelegate.m */; };
 		D8E17A8C1964331900F1549F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E17A8A1964331900F1549F /* Main.storyboard */; };
-		D8E17A911964331900F1549F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E17A901964331900F1549F /* Images.xcassets */; };
 		D8E17A981964331900F1549F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A971964331900F1549F /* XCTest.framework */; };
 		D8E17A991964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
 		D8E17A9A1964331900F1549F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7C1964331900F1549F /* UIKit.framework */; };
@@ -43,6 +42,7 @@
 /* Begin PBXFileReference section */
 		034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-searchAndShoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0DF866CE7A3AB196EF3070 /* Pods-searchAndShoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B2FCE081B165D99001E3F47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7289E07819CDDCE4009B4E35 /* FISSearchDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchDetailTableViewController.h; sourceTree = "<group>"; };
 		7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchDetailTableViewController.m; sourceTree = "<group>"; };
 		CF5AFF0E82641F62D1C923F8 /* Pods-searchAndShoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,13 +51,11 @@
 		D8E17A7A1964331900F1549F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8E17A7C1964331900F1549F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8E17A801964331900F1549F /* searchAndShout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "searchAndShout-Info.plist"; sourceTree = "<group>"; };
-		D8E17A821964331900F1549F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E17A841964331900F1549F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8E17A861964331900F1549F /* searchAndShout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "searchAndShout-Prefix.pch"; sourceTree = "<group>"; };
 		D8E17A871964331900F1549F /* FISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		D8E17A881964331900F1549F /* FISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		D8E17A8B1964331900F1549F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8E17A901964331900F1549F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8E17A961964331900F1549F /* searchAndShoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = searchAndShoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E17A971964331900F1549F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8E17A9F1964331900F1549F /* searchAndShoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "searchAndShoutTests-Info.plist"; sourceTree = "<group>"; };
@@ -131,6 +129,7 @@
 				D8E17ABC196439B700F1549F /* FISSearchViewController.m */,
 				D8E17AB81964368500F1549F /* FISDancesTableViewController.h */,
 				D8E17AB91964368600F1549F /* FISDancesTableViewController.m */,
+				5B2FCE081B165D99001E3F47 /* Images.xcassets */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -176,7 +175,6 @@
 				7289E07B19CDDCF9009B4E35 /* models */,
 				7289E07C19CDDD0F009B4E35 /* view controllers */,
 				D8E17A8A1964331900F1549F /* Main.storyboard */,
-				D8E17A901964331900F1549F /* Images.xcassets */,
 				D8E17A7F1964331900F1549F /* Supporting Files */,
 			);
 			path = searchAndShout;
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				D8E17A801964331900F1549F /* searchAndShout-Info.plist */,
-				D8E17A811964331900F1549F /* InfoPlist.strings */,
 				D8E17A841964331900F1549F /* main.m */,
 				D8E17A861964331900F1549F /* searchAndShout-Prefix.pch */,
 			);
@@ -290,8 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E17A911964331900F1549F /* Images.xcassets in Resources */,
-				D8E17A831964331900F1549F /* InfoPlist.strings in Resources */,
+				5B2FCE091B165D99001E3F47 /* Images.xcassets in Resources */,
 				D8E17A8C1964331900F1549F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,14 +370,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8E17A811964331900F1549F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E17A821964331900F1549F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		D8E17A8A1964331900F1549F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
