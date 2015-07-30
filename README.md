@@ -1,9 +1,4 @@
----
-languages: objc
 
-tags: predicate, coredata, segmented control 
-
----
 
 # Search and Shout
 
