@@ -9,7 +9,7 @@ target "searchAndShout" do
 end
 
 target "searchAndShoutTests" do
-  pod 'Specta',     :git=>'git@github.com:specta/specta.git'
+  pod 'Specta'
   pod 'Expecta',     '~> 0.2.4'                                                 
   pod 'Swizzlean', '~> 0.1.1' 
   pod 'OCMockito'

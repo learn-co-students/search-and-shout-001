@@ -1,17 +1,11 @@
-//
-//  OCHamcrest - HCIsSame.m
-//  Copyright 2014 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2015 hamcrest.org. See LICENSE.txt
 
 #import "HCIsSame.h"
 
 
 @interface HCIsSame ()
-@property (nonatomic, readonly) id object;
+@property (nonatomic, strong, readonly) id object;
 @end
 
 @implementation HCIsSame

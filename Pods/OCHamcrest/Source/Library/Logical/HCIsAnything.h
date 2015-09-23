@@ -1,11 +1,5 @@
-//
-//  OCHamcrest - HCIsAnything.h
-//  Copyright 2014 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2015 hamcrest.org. See LICENSE.txt
 
 #import <OCHamcrest/HCBaseMatcher.h>
 
@@ -26,38 +20,33 @@
 
 FOUNDATION_EXPORT id HC_anything(void);
 
-/**
- Matches anything.
- 
- This matcher always evaluates to @c YES. Specify this in composite matchers when the value of a
- particular element is unimportant.
- 
- (In the event of a name clash, don't \#define @c HC_SHORTHAND and use the synonym
- @c HC_anything instead.)
- 
- @ingroup logical_matchers
- */
 #ifdef HC_SHORTHAND
-    #define anything() HC_anything()
+/*!
+ * @brief Matches anything.
+ * @discussion This matcher always evaluates to <code>YES</code>. Specify this in composite matchers
+ * when the value of a particular element is unimportant.
+ *
+ * @attribute Name Clash
+ * In the event of a name clash, don't <code>#define HC_SHORTHAND</code> and use the synonym
+ * HC_anything instead.
+ */
+#define anything() HC_anything()
 #endif
 
 
 FOUNDATION_EXPORT id HC_anythingWithDescription(NSString *aDescription);
 
-/**
- anythingWithDescription(description) -
- Matches anything.
- 
- @param description  A string used to describe this matcher.
- 
- This matcher always evaluates to @c YES. Specify this in collection matchers when the value of a
- particular element in a collection is unimportant.
- 
- (In the event of a name clash, don't \#define @c HC_SHORTHAND and use the synonym
- @c HC_anything instead.)
- 
- @ingroup logical_matchers
- */
 #ifdef HC_SHORTHAND
-    #define anythingWithDescription HC_anythingWithDescription
+/*!
+ * @brief anythingWithDescription(description) -
+ * Matches anything.
+ * @param description A string used to describe this matcher.
+ * @discussion This matcher always evaluates to <code>YES</code>. Specify this in collection
+ * matchers when the value of a particular element in a collection is unimportant.
+ *
+ * @attribute Name Clash
+ * In the event of a name clash, don't <code>#define HC_SHORTHAND</code> and use the synonym
+ * HC_anything instead.
+ */
+#define anythingWithDescription HC_anythingWithDescription
 #endif
