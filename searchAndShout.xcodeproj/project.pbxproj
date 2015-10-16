@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B190DE81B176A2700998219 /* FISSearchViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B190DE71B176A2700998219 /* FISSearchViewControllerSpec.m */; };
 		5B2FCE091B165D99001E3F47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2FCE081B165D99001E3F47 /* Images.xcassets */; };
+		5BBECA2A1BD1492B00FFFAE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBECA291BD1492B00FFFAE2 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		7289E07A19CDDCE4009B4E35 /* FISSearchDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */; };
 		7DD53D22E968B81358BB917B /* libPods-searchAndShoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */; };
 		D8E17A791964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
@@ -45,6 +46,7 @@
 		4B0DF866CE7A3AB196EF3070 /* Pods-searchAndShoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B190DE71B176A2700998219 /* FISSearchViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchViewControllerSpec.m; sourceTree = "<group>"; };
 		5B2FCE081B165D99001E3F47 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5BBECA291BD1492B00FFFAE2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7289E07819CDDCE4009B4E35 /* FISSearchDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchDetailTableViewController.h; sourceTree = "<group>"; };
 		7289E07919CDDCE4009B4E35 /* FISSearchDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchDetailTableViewController.m; sourceTree = "<group>"; };
 		CF5AFF0E82641F62D1C923F8 /* Pods-searchAndShoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchAndShoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-searchAndShoutTests/Pods-searchAndShoutTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		D8E17A6C1964331900F1549F = {
 			isa = PBXGroup;
 			children = (
+				5BBECA291BD1492B00FFFAE2 /* Launch Screen.storyboard */,
 				D8E17A7E1964331900F1549F /* searchAndShout */,
 				D8E17A9D1964331900F1549F /* searchAndShoutTests */,
 				D8E17A771964331900F1549F /* Frameworks */,
@@ -290,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBECA2A1BD1492B00FFFAE2 /* Launch Screen.storyboard in Resources */,
 				5B2FCE091B165D99001E3F47 /* Images.xcassets in Resources */,
 				D8E17A8C1964331900F1549F /* Main.storyboard in Resources */,
 			);
@@ -425,7 +429,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -457,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -466,8 +470,6 @@
 		D8E17AA81964331900F1549F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "searchAndShout/searchAndShout-Prefix.pch";
 				INFOPLIST_FILE = "searchAndShout/searchAndShout-Info.plist";
@@ -479,8 +481,6 @@
 		D8E17AA91964331900F1549F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "searchAndShout/searchAndShout-Prefix.pch";
 				INFOPLIST_FILE = "searchAndShout/searchAndShout-Info.plist";
