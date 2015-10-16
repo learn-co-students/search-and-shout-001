@@ -3,7 +3,7 @@
 What is OCHamcrest?
 -------------------
 
-[![Build Status](https://travis-ci.org/hamcrest/OCHamcrest.svg?branch=master)](https://travis-ci.org/hamcrest/OCHamcrest) [![Coverage Status](https://coveralls.io/repos/hamcrest/OCHamcrest/badge.png?branch=master)](https://coveralls.io/r/hamcrest/OCHamcrest?branch=master) [![Cocoapods Version](https://cocoapod-badges.herokuapp.com/v/OCHamcrest/badge.png)](http://cocoapods.org/?q=ochamcrest)
+[![Build Status](https://travis-ci.org/hamcrest/OCHamcrest.svg?branch=master)](https://travis-ci.org/hamcrest/OCHamcrest) [![Coverage Status](https://coveralls.io/repos/hamcrest/OCHamcrest/badge.svg?branch=master)](https://coveralls.io/r/hamcrest/OCHamcrest?branch=master) [![Cocoapods Version](https://cocoapod-badges.herokuapp.com/v/OCHamcrest/badge.png)](https://cocoapods.org/pods/OCHamcrest)
 
 OCHamcrest is an iOS and Mac OS X library providing:
 
@@ -86,12 +86,12 @@ XCTest's `XCTAssertEqualObjects` function, we'll use OCHamcrest's `assertThat`
 construct and a predefined matcher:
 
 ```obj-c
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
 
-@interface BiscuitTest : SenTestCase
+@interface BiscuitTest : XCTestCase
 @end
 
 @implementation BiscuitTest
@@ -135,6 +135,7 @@ OCHamcrest comes with a library of useful matchers:
   * `isA` - match object type precisely, no subclasses
   * `nilValue`, `notNilValue` - match `nil`, or not `nil`
   * `sameInstance` - match same object
+  * `throwsException` - match block that throws an exception
 
 * Number
 
@@ -143,6 +144,8 @@ OCHamcrest comes with a library of useful matchers:
   `equalToInt` for an `int`)
   * `greaterThan`, `greaterThanOrEqualTo`, `lessThan`,
   `lessThanOrEqualTo` - match numeric ordering
+  * `isFalse` - match zero
+  * `isTrue` - match non-zero
 
 * Text
 
@@ -166,6 +169,7 @@ OCHamcrest comes with a library of useful matchers:
 
   * `contains` - exactly match the entire collection
   * `containsInAnyOrder` - match the entire collection, but in any order
+  * `everyItem` - match if every item in a collection satisfies a given matcher
   * `hasCount` - match number of elements against another matcher
   * `hasCountOf` - match collection with given number of elements
   * `hasEntries` - match dictionary with list of key-value pairs
@@ -206,6 +210,20 @@ Other matchers that take matchers as arguments provide similar shortcuts,
 wrapping non-matcher arguments in `equalTo`.
 
 
+How can I assert on an asynchronous call?
+-----------------------------------------
+
+`assertWithTimeout` will keep evaluating an expression until the matcher
+is satisfied or a timeout is reached. For example,
+
+```obj-c
+assertWithTimeout(5, thatEventually(self.someString), is(@"expected"));
+```
+
+This repeatedly checks for this string to evaluate to "expected" before timing out
+after 5 seconds. `thatEventually` is a convenience function to create a block.
+
+
 Writing custom matchers
 -----------------------
 
@@ -213,3 +231,9 @@ OCHamcrest comes bundled with lots of useful matchers, but you'll probably find
 that you need to create your own from time to time to fit your testing needs.
 See the ["Writing Custom Matchers" guide for more information](https://github.com/hamcrest/OCHamcrest/wiki/Writing-Custom-Matchers
 ).
+
+
+What about Swift?
+-----------------
+
+Try the [native Swift implementation of Hamcrest](https://github.com/nschum/SwiftHamcrest).
