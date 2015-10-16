@@ -10,10 +10,10 @@ end
 
 target "searchAndShoutTests" do
   pod 'Specta'
-  pod 'Expecta',     '~> 0.2.4'                                                 
-  pod 'Swizzlean', '~> 0.1.1' 
+  pod 'Expecta'                                               
+  pod 'Swizzlean'
   pod 'OCMockito'
-  pod 'OHHTTPStubs', '~> 3.1.2'
-  pod 'KIF', '~> 3.0.4' 
+  pod 'OHHTTPStubs'
+  pod 'KIF' 
 end
 
