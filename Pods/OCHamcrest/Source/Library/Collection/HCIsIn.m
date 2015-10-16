@@ -1,17 +1,11 @@
-//
-//  OCHamcrest - HCIsIn.m
-//  Copyright 2014 hamcrest.org. See LICENSE.txt
-//
-//  Created by: Jon Reid, http://qualitycoding.org/
-//  Docs: http://hamcrest.github.com/OCHamcrest/
-//  Source: https://github.com/hamcrest/OCHamcrest
-//
+//  OCHamcrest by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2015 hamcrest.org. See LICENSE.txt
 
 #import "HCIsIn.h"
 
 
 @interface HCIsIn ()
-@property (nonatomic, readonly) id collection;
+@property (nonatomic, strong, readonly) id collection;
 @end
 
 @implementation HCIsIn
@@ -29,7 +23,7 @@
                                        reason:@"Object must respond to -containsObject:"
                                      userInfo:nil];
     }
-    
+
     self = [super init];
     if (self)
         _collection = collection;
