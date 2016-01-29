@@ -28,4 +28,4 @@ What the app should look like:
 * Use a `Segmented Control` view above your `Text Field` to allow the user to be able to toggle between searching for either the **name** or various **step**'s of a `FISDanceMove`.
 * An example of the flow of the app.  If the user searches the word "right" for **step2**, the following `Table View Controller` should populate three cells, the title of the cell displaying **step** of the dance move it pertains to.  The Subtitle should display the **name** of the dancemove.  The Macarena, Hokey Pokey and The Twist contain the word "right" in their **step2**.  
 
-<a href='https://learn.co/lessons/search-and-shout' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/search-and-shout' title='Search and Shout'>Search and Shout</a> on Learn.co and start learning to code for free.</p>
