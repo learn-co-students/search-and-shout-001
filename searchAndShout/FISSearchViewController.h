@@ -10,4 +10,9 @@
 
 @interface FISSearchViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UITextField *searchField;
+
+- (IBAction)searchTapped:(id)sender;
+
 @end
