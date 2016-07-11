@@ -15,7 +15,7 @@
 		318F5FCA19F81DB600ADA305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 318F5FC719F81DB600ADA305 /* main.m */; };
 		318F5FCD19F81DBC00ADA305 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 318F5FCC19F81DBC00ADA305 /* InfoPlist.strings */; };
 		318F5FE219F93F0F00ADA305 /* searchAndShout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 318F5FE019F93F0F00ADA305 /* searchAndShout.xcdatamodeld */; };
-		5BBECA281BD1422200FFFAE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBECA271BD1422200FFFAE2 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		5BBECA281BD1422200FFFAE2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBECA271BD1422200FFFAE2 /* Launch Screen.storyboard */; };
 		7DD53D22E968B81358BB917B /* libPods-searchAndShoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 034B2405E969669D80DA2785 /* libPods-searchAndShoutTests.a */; };
 		D8E17A791964331900F1549F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A781964331900F1549F /* Foundation.framework */; };
 		D8E17A7B1964331900F1549F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17A7A1964331900F1549F /* CoreGraphics.framework */; };
@@ -27,6 +27,7 @@
 		D8E17AA21964331900F1549F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8E17AA01964331900F1549F /* InfoPlist.strings */; };
 		D8E17AA41964331900F1549F /* searchAndShoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E17AA31964331900F1549F /* searchAndShoutTests.m */; };
 		D8E17AB11964337E00F1549F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E17AB01964337E00F1549F /* CoreData.framework */; };
+		D9C46E651D33FC9C00BA9BBD /* FISSearchDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C46E641D33FC9C00BA9BBD /* FISSearchDetailTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		D8E17AA11964331900F1549F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8E17AA31964331900F1549F /* searchAndShoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchAndShoutTests.m; sourceTree = "<group>"; };
 		D8E17AB01964337E00F1549F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D9C46E631D33FC9C00BA9BBD /* FISSearchDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchDetailTableViewController.h; sourceTree = "<group>"; };
+		D9C46E641D33FC9C00BA9BBD /* FISSearchDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchDetailTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				318F5FBF19F81DA100ADA305 /* FISDataStore.m */,
 				318F5FC019F81DA100ADA305 /* FISSearchViewController.h */,
 				318F5FC119F81DA100ADA305 /* FISSearchViewController.m */,
+				D9C46E631D33FC9C00BA9BBD /* FISSearchDetailTableViewController.h */,
+				D9C46E641D33FC9C00BA9BBD /* FISSearchDetailTableViewController.m */,
 				318F5FE019F93F0F00ADA305 /* searchAndShout.xcdatamodeld */,
 				D8E17A8A1964331900F1549F /* Main.storyboard */,
 				D8E17A7F1964331900F1549F /* Supporting Files */,
@@ -340,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				318F5FC419F81DA100ADA305 /* FISDancesTableViewController.m in Sources */,
+				D9C46E651D33FC9C00BA9BBD /* FISSearchDetailTableViewController.m in Sources */,
 				318F5FC319F81DA100ADA305 /* FISDanceMove.m in Sources */,
 				318F5FE219F93F0F00ADA305 /* searchAndShout.xcdatamodeld in Sources */,
 				318F5FC619F81DA100ADA305 /* FISSearchViewController.m in Sources */,
